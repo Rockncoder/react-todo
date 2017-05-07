@@ -2,7 +2,8 @@ import React from 'react';
 import {PropTypes} from 'prop-types';
 import Todo from './Todo';
 
-const TodoList = ({todos, onTodoClick}) => (
+const TodoList = ({todos, onTodoClick}) => {
+  return (
   <ul>
     {todos.map(todo =>
       <Todo
@@ -12,7 +13,7 @@ const TodoList = ({todos, onTodoClick}) => (
       />
     )}
   </ul>
-);
+);}
 
 TodoList.propTypes = {
   todos: PropTypes.arrayOf(PropTypes.shape({

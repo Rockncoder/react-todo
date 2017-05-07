@@ -1,6 +1,8 @@
 let nextTodoId = 0;
 
-// Action
+// Action Creators
+
+
 export const addTodo = (text) => {
   return {
     type: 'ADD_TODO',
@@ -13,5 +15,12 @@ export const toggleTodo = (id) => {
   return {
     type: 'TOGGLE_TODO',
     id
+  }
+};
+
+export const setVisibilityFilter = (filter) => {
+  return {
+    type: 'SET_VISIBILITY_FILTER',
+    filter
   }
 };
